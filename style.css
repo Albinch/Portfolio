@@ -7,6 +7,10 @@ section{
     min-height: 100vh;
 }
 
+.magenta{
+    background-color: #6c63ff;
+}
+
 /* HERO BANNER */
 
 .hero{
@@ -145,9 +149,6 @@ section{
     animation: bubble-animation 15s infinite;
 }
 
-.bubble{
-}
-
 @keyframes bubble-animation {
     0%{
         transform: scale(0.5);
@@ -189,4 +190,292 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+/* PROJECTS */
+
+.container-projects-title{
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+}
+
+.container-projects-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 85%;
+    margin: 80px auto;
+}
+
+.container-projects-cards a{
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 1px #9F9F9F;
+    z-index: 1;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title i{
+    margin-right: 10px;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-footer img{
+    width: 20px;
+}
+
+.card-image{
+    width: 100%;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0px 30px 0px;
+}
+
+.card-body{
+    font-size: 20px;
+    margin: 0px 10px 20px 10px;
+    line-height: 30px;
+}
+
+.card-footer{
+    margin: auto 0px 10px 10px;
+}
+
+.card-footer img{
+    width: 20px;
+}
+
+.card1-image{
+    background-image: url('./img/vinted.png');
+}
+
+.card2-image{
+    background-image: url('./img/polytech.gif');
+}
+
+.card3-image{
+    background-image: url('./img/portfolio.png');
+}
+
+.card4-image{
+    background-image: url('./img/medecine.jpg');
+}
+
+.card5-image{
+    background-image: url('./img/points.jpg');
+}
+
+.card6-image{
+    background-image: url('./img/logosysdeco.png');
+}
+
+.card7-image{
+    background-image: url('./img/logosysdeco.png');
+}
+
+.card8-image{
+    background-image: url('./img/MEL.png');
+}
+
+.card9-image{
+    background-image: url('./img/polytech.gif');
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 1px #6c63ff;
+}
+
+.wave{
+    width: 100%;
+    transform: translateY(105px);
+}
+
+/* JOURNEY */
+
+.container-journey-title{
+    position: relative;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    z-index: 1;
+}
+
+.container-journey-path-skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-journey-left{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding-left: 150px;
+}
+
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.line{
+    width: 15px;
+    height: 700px;
+    background: white;
+}
+
+.dots{
+    position: absolute;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+.dot:after{
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #F2D43D;
+    margin-bottom: 100px;
+}
+
+.dot:hover:after{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.text-left{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-left div{
+    display: block;
+    float: right;
+    margin-right: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+
+.text-left div p{
+    margin: 0;
+}
+
+.text-right{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-right div{
+    display: block;
+    float: left;
+    margin-left: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+
+.text-right div p{
+    margin: 0;
+}
+
+.container-journey-left .date{
+    color: #E4AAE0;
+}
+
+.container-journey-right{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.container-journey-right-title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.skills-own{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.container-journey-right img{
+    width: 60px;
+    height: 60px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.visible{
+    visibility: visible;
+    animation: fadein 1s linear;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
