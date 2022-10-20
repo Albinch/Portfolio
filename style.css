@@ -280,15 +280,15 @@ section{
 }
 
 .card2-image{
-    background-image: url('./img/polytech.gif');
+    background-image: url('./img/polytech.svg');
 }
 
 .card3-image{
-    background-image: url('./img/portfolio.png');
+    background-image: url('./img/portfolio.svg');
 }
 
 .card4-image{
-    background-image: url('./img/medecine.jpg');
+    background-image: url('./img/medecine.svg');
 }
 
 .card5-image{
@@ -304,11 +304,11 @@ section{
 }
 
 .card8-image{
-    background-image: url('./img/MEL.png');
+    background-image: url('./img/mel.png');
 }
 
 .card9-image{
-    background-image: url('./img/polytech.gif');
+    background-image: url('./img/polytech.svg');
 }
 
 .card:hover{
@@ -319,12 +319,13 @@ section{
 
 .wave{
     width: 100%;
-    transform: translateY(105px);
+    transform: translateY(10px);
 }
 
 /* JOURNEY */
 
 .container-journey-title{
+    color: white;
     position: relative;
     font-weight: 600;
     font-size: 45px;
@@ -347,6 +348,7 @@ section{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     margin-top: 50px;
     padding-left: 150px;
 }
@@ -405,6 +407,7 @@ section{
     margin-top: 25px;
     display: flex;
     flex-direction: column;
+    max-width: 200px;
 }
 
 .text-left div{
@@ -414,7 +417,7 @@ section{
     color: white;
     font-weight: 500;
     font-size: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 85px;
 }
 
 .text-left div p{
@@ -425,6 +428,7 @@ section{
     margin-top: 25px;
     display: flex;
     flex-direction: column;
+    max-width: 250px;
 }
 
 .text-right div{
@@ -434,7 +438,7 @@ section{
     color: white;
     font-weight: 500;
     font-size: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 85px;
 }
 
 .text-right div p{
@@ -459,6 +463,7 @@ section{
 
 .skills{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -540,7 +545,7 @@ section{
     color: white;
     border-radius: 5px;
     font-size: 20px;
-    padding: 5px 25px 5px 25px;
+    padding: 10px 25px 10px 25px;
 }
 
 .container-contact-right form button:hover{
@@ -585,4 +590,141 @@ section{
 
 .lastname, .firstname{
     width: 50%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    section{
+        min-height: initial;
+    }
+
+    /* HERO */
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .title{
+        font-weight: 800;
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .subtitle{
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center
+    }
+    
+    .hero-image{
+        display: none;
+    }
+
+    /* ABOUT */
+    .container-about{
+        margin-bottom: 80px;
+    }
+
+    .bubble{
+        display: none;
+    }
+
+    .container-about-left{
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .description{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .container-about-right, .me{
+        display: none;
+    }
+
+    /* JOURNEY */
+    .container-journey{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .container-journey-title small{
+        display: none;
+    }
+
+    .container-journey-path-skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-journey-left{
+        max-width: 20%;
+    }
+
+    .container-journey-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-left{
+        max-width: 150px;
+    }
+
+    .text-left div{
+        margin-bottom: 70px;
+    }
+
+    .text-right{
+        max-width: 150px;
+    }
+
+    .text-right div{
+        margin-bottom: 60px;
+    }
+
+    /* CONTACT */
+    .container-contact{
+        padding: 80px 15px 150px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .container-contact-left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .mailbox{
+        display: none;
+    }
+
+    .container-contact-right{
+        width: 100%;
+    }
+
+    .container-contact-right form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-contact-right form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
 }
