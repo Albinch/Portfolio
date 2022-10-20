@@ -17,7 +17,7 @@
             <div class="hero-text">
                 <div class="title">Hello, I'm Clément Alba</div>
                 <div class="subtitle">A junior <span>full-stack developer</span> !</div>
-                <button type="button">Begin</button>
+                <button type="button" onclick="begin()">Begin</button>
                 <div class="networks">
                     <a href="https://www.linkedin.com/in/cl%C3%A9ment-alba-847a7519b/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
                     <a href="https://twitter.com/albd3v" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
@@ -30,7 +30,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="container-about">
             <div class="about-bubbles">
                 <div class="bubble bubble1"></div>
@@ -126,7 +126,7 @@
                     <div class="card-body">Professional project during which I had to create a dashboard to visualize the company's data.</div>
                     <div class="card-footer">
                         <img src="./img/csharp.png" alt="csharp">
-                        <img src="./img/aspnet.jpg" alt="aspnet">
+                        <img src="./img/aspnet.png" alt="aspnet">
                         <img src="./img/vue.png" alt="vue">
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                     <div class="card-body">Professional project during which I had to create an editable information page, allowing to give information about customers.</div>
                     <div class="card-footer">
                         <img src="./img/csharp.png" alt="csharp">
-                        <img src="./img/aspnet.jpg" alt="aspnet">
+                        <img src="./img/aspnet.png" alt="aspnet">
                     </div>
                 </div>
 
@@ -175,7 +175,10 @@
 
     <section class="magenta">
         <div class="container-journey">
-            <div class="container-journey-title">Now, my career path...</div>
+            <div class="container-journey-title">
+                <span>Now, my career path...</span>
+                <small>Click on the little dots to see what I learned during my journey !</small>
+            </div>
             <div class="container-journey-path-skills">
                 <div class="container-journey-left">
                     <div class="text-left">
@@ -207,7 +210,7 @@
                     <div class="progress">
                         <div class="line"></div>
                         <div class="dots">
-                            <div class="dot dot1"></div>
+                            <div class="dot dot1 active"></div>
                             <div class="dot dot2"></div>
                             <div class="dot dot3"></div>
                             <div class="dot dot4"></div>
@@ -242,7 +245,9 @@
                     </div>
                 </div>
                 <div class="container-journey-right">
-                    <div class="container-journey-right-title">What I've learned</div>
+                    <div class="container-journey-right-title">
+                        What I've learned
+                    </div>
                     <div class="skills">
                         <img class="skills1 visible" src="./img/html.png" alt="html">
                         <img class="skills1 visible" src="./img/css.png" alt="html" style="width: 50px;">
@@ -257,15 +262,46 @@
                         <img class="skills3 hidden" src="./img/csharp.png" alt="html">
                         <img class="skills3 hidden" src="./img/bootstrap.png" alt="html" style="height: 50px;">
                         <img class="skills4 hidden" src="./img/c.png" alt="html">
+                        <img class="skills4 hidden" src="./img/r.png" alt="html">
                         <img class="skills5 hidden" src="./img/github-desktop.png" alt="html">
                     </div>
                     <div class="container-journey-right-title title-own hidden">And what I've learned on my own</div>
                     <div class="skills-own hidden">
                         <img class="own" src="./img/node.png" alt="html">
                         <img class="own" src="./img/illustrator.png" alt="html" style="width: 40px;height: 40px;">
-                        <img class="own" src="./img/bubble.png" alt="html" style="width: 80px;">
+                        <img class="own" src="./img/bubble.png" alt="html" style="width: 80px;height: 40px;">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="magenta">
+        <div class="container-contact">
+            <div class="container-contact-left">
+                <div>Did you enjoy your visit ?</div>
+                <div>Do not hesitate to contact me !</div>
+                <div class="mailbox"></div>
+            </div>
+            <div class="container-contact-right">
+                <form>
+                    <div class="lastname">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname">
+                    </div>
+
+                    <div class="firstname">
+                        <label for="firstname">First name</label>
+                        <input type="text" id="firstname">
+                    </div>
+
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
     </section>

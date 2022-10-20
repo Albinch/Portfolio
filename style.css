@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'League Spartan', sans-serif;
@@ -326,6 +330,12 @@ section{
     font-size: 45px;
     text-align: center;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-journey-title small{
+    font-size: 18px;
 }
 
 .container-journey-path-skills{
@@ -375,12 +385,18 @@ section{
     width: 25px;
     height: 25px;
     border-radius: 30px;
-    background-color: #F2D43D;
+    background-color: white;
     margin-bottom: 100px;
+    animation: flash 1s infinite;
+}
+
+.dot.active:after{
+    background-color: #CFC9F2;
+    animation: none;
 }
 
 .dot:hover:after{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.2s linear;
 }
@@ -478,4 +494,95 @@ section{
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/* CONTACT */
+
+.container-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.container-contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.container-contact-left .mailbox{
+    width: 400px;
+    height: 400px;
+    background-image: url('./img/undraw_mailbox_re_dvds.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container-contact-right{
+    width: 50%;
+}
+
+.container-contact-right form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-contact-right button{
+    font-family: 'League Spartan', sans-serif;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px 5px 25px;
+}
+
+.container-contact-right form button:hover{
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.container-contact-right form div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.container-contact-right form div label{
+    margin-bottom: 5px;
+}
+
+.container-contact-right form div input{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white; 
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container-contact-right form div textarea{
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    padding: 10px;
+    width: 75%;
+    font-size: 15px;
+}
+
+.lastname, .firstname{
+    width: 50%;
 }
